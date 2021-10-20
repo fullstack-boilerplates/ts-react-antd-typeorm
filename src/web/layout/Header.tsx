@@ -13,7 +13,8 @@ export const Header = () => {
       <Item key="/" > <NavLink to="/">首页|Home</NavLink> </Item>
       {curentUser
         ? <>
-          {!!curentUser.isAdmin && <Item key="/admin/home" > <NavLink to="/admin/home">管理后台</NavLink> </Item>}
+          {!!curentUser.isAdmin && <Item key="/admin/home" >
+            <NavLink to="/admin/home">管理后台|Admin</NavLink> </Item>}
           <Item key="/logout" onClick={() => {
             logout()
             history.push('/')

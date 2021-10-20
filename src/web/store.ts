@@ -31,6 +31,9 @@ export const login = (account: string, pass: string, opts: {
       if (remember) {
         console.log(u)
         localStorage.setItem(USER_TOKEN_KEY, u.token)
+        setHeaders({
+          [JWT_HEADER_KEY]: u.token
+        })
       }
       onSuccess()
       return u

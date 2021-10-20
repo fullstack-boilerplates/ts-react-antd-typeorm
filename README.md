@@ -1,6 +1,8 @@
 # ts-react-antd-typeorm-jwt
 fullstack bolierplate with shack.js | 基于 shack.js 的全栈模板
 
+![screenshot](./screenshot.gif)
+
 ## structure | 文件结构
 
 ```
